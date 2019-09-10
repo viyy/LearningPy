@@ -9,7 +9,7 @@ import re
 
 
 def descr():
-    return "{} - Проверка введенного логина (regexp)."
+    return "Проверка введенного логина (regexp)."
 
 
 def run():

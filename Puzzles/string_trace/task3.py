@@ -5,13 +5,13 @@
 
 
 def descr():
-    return "{} - Проверка строк на перестановку"
+    return "Проверка строк на перестановку"
 
 
 def calculate_trace(inp):
     path = {}
     for c in inp.lower():
-        path[c] = path[c] + 1 if c in path else 1
+        path[c] = (path[c] + 1) if c in path else 1
     return path
 
 

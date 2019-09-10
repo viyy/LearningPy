@@ -9,7 +9,7 @@ separators = [".", ",", ":", ";", " ", "!", "?"]
 
 
 def descr():
-    return "{} - Простой анализ сообщения"
+    return "Простой анализ сообщения"
 
 
 def only_short(msg, n):
