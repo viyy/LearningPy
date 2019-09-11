@@ -28,6 +28,11 @@ class Doubler:
         self._current *= 2
         self.check()
 
+    def reset(self):
+        self._current = 1
+        self._win = False
+        self._lose = False
+
     @property
     def current(self):
         return self._current
