@@ -1,10 +1,12 @@
+# coding: utf8
 from colorama import init, Fore, Style
 
 from Puzzles.doubler import task5
-from Puzzles.loginCheck import task1_1, task1_2
+from Puzzles.login_check import task1_1, task1_2
 from Puzzles.pairs import task4
 from Puzzles.string_trace import task3
 from Puzzles.words_in_message import task2
+from Puzzles.believe_or_not import task6
 
 init()
 
@@ -13,7 +15,8 @@ puzzles = [[task1_1.descr, task1_1.run],
            [task2.descr, task2.run],
            [task3.descr, task3.run],
            [task4.descr, task4.run],
-           [task5.descr, task5.run]]
+           [task5.descr, task5.run],
+           [task6.descr, task6.run]]
 i = -1
 while i != 0:
     for x in range(0, len(puzzles)):
