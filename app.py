@@ -1,4 +1,3 @@
-# coding: utf8
 from colorama import init, Fore, Style
 
 from Puzzles.doubler import task5
@@ -22,8 +21,8 @@ while i != 0:
     for x in range(0, len(puzzles)):
         print("[{}] - ".format(x+1)+puzzles[x][0]())
     else:
-        print(Fore.RED + "[0] - Exit")
-        i = input(Fore.GREEN + "Puzzle to run->")
+        print(Fore.RED + Style.BRIGHT + "[0] - Exit" + Style.RESET_ALL + Fore.GREEN + Style.BRIGHT)
+        i = input("Puzzle to run->")
         if i.isdecimal():
             i = int(i)
             if 0 < int(i) <= len(puzzles):
