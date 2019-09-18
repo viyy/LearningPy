@@ -24,7 +24,7 @@ def load(path):
 def calculate_worse():
     global __students
     global __worse
-    __worse = __students.sort(lambda x: x.points).distinct(lambda x: x.points).take(3).select(lambda x: x.points)
+    __worse = __students.sort(lambda x: x.points).take(3).select(lambda x: x.points)
 
 
 def run():

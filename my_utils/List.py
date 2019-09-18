@@ -10,10 +10,12 @@ class List:
 
     def distinct(self, key):
         res = []
+        keys = []
         for x in self.__list:
-            if key(x) in res:
+            if key(x) in keys:
                 continue
             res.append(x)
+            keys.append(key(x))
         return List(res)
 
     def take(self, count):

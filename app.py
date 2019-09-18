@@ -5,6 +5,7 @@ from Puzzles.ege import task7
 from Puzzles.login_check import task1_1, task1_2
 from Puzzles.pairs import task4
 from Puzzles.string_trace import task3
+from Puzzles.tel import task8
 from Puzzles.words_in_message import task2
 from Puzzles.believe_or_not import task6
 
@@ -17,7 +18,8 @@ puzzles = [[task1_1.descr, task1_1.run],
            [task4.descr, task4.run],
            [task5.descr, task5.run],
            [task6.descr, task6.run],
-           [task7.descr, task7.run]]
+           [task7.descr, task7.run],
+           [task8.descr, task8.run]]
 i = -1
 while i != 0:
     for x in range(0, len(puzzles)):
