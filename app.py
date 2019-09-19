@@ -3,9 +3,11 @@ from colorama import init, Fore, Style
 from Puzzles.doubler import task5
 from Puzzles.ege import task7
 from Puzzles.hard_ege import task9
+from Puzzles.html import task10
 from Puzzles.login_check import task1_1, task1_2
 from Puzzles.pairs import task4
 from Puzzles.string_trace import task3
+from Puzzles.super_doubler import task11
 from Puzzles.tel import task8
 from Puzzles.words_in_message import task2
 from Puzzles.believe_or_not import task6
@@ -21,7 +23,9 @@ puzzles = [[task1_1.descr, task1_1.run],
            [task6.descr, task6.run],
            [task7.descr, task7.run],
            [task8.descr, task8.run],
-           [task9.descr, task9.run]]
+           [task9.descr, task9.run],
+           [task10.descr, task10.run],
+           [task11.descr, task11.run]]
 i = -1
 while i != 0:
     for x in range(0, len(puzzles)):
