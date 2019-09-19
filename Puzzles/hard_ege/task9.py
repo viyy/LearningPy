@@ -10,9 +10,11 @@ __STOP = False
 
 
 def generate(path):
+    t = []
     with open(path, "wb") as f:
         for i in range(__COUNT):
-            f.write(struct.pack('i', int(__MinValue + (__MaxValue - __MinValue) * random.random())))
+            t.append(int(__MinValue + (__MaxValue - __MinValue) * random.random()))
+        f.write(struct.pack('%si' % len(t), *t))
 
 
 def descr():
